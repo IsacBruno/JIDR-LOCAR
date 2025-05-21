@@ -1,20 +1,9 @@
 /* Estilos globais aplicados a todos os elementos */
 * {
-  /* Remove todas as margens de todos os elementos */
   margin: 0px;
-
-  /* Remove todo o preenchimento interno de todos os elementos */
   padding: 0px;
-
-  /* Define que o cálculo do tamanho dos elementos deve incluir a largura da borda e o preenchimento,
-         evitando problemas com o tamanho total do elemento */
   box-sizing: border-box;
-
-  /* Define a fonte padrão como Arial para todos os elementos */
-  font-family: Arial, sans-serif;
-
-  /* Remove o contorno (outline) de elementos focados, como botões e inputs,
-         o que pode melhorar a estética, mas deve ser usado com cuidado para manter a acessibilidade */
+  font-family: arial;
   outline: none;
 }
 
@@ -280,21 +269,23 @@ main {
 }
 
 .btn-saiba-mais {
-  padding: 8px 15px;
-  border-radius: 5px;
-  border: none;
-  background-color: #f47b04;
+  background-color: #f57c00;
   color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  width: 120px; /* Define uma largura fixa para alinhamento */
+  padding: 12px 0;
+  width: 160px; /* Largura fixa */
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
-  display: inline-block; /* Mantém os botões alinhados corretamente */
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-saiba-mais:hover {
-  background-color: #f47b04;
+  background-color: #e66b00;
 }
 
 .whatsapp-float {
@@ -416,4 +407,348 @@ main {
 .card-item p {
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 1024px) {
+  #solucoes main {
+    flex-direction: column;
+  }
+
+  #solucoes main .imgVertical {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #banner h1 {
+    font-size: 1.5rem;
+  }
+
+  #solucoes p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  #solucoes .verMais {
+    width: 100%;
+  }
+
+  .card-item {
+    width: 100%;
+  }
+
+  .cards-list {
+    gap: 15px;
+  }
+
+  .vehicle-content {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #banner h1 {
+    font-size: 1.2rem;
+  }
+
+  #solucoes {
+    padding: 20px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: 1fr;
+  }
+
+  #solucoes main ul li {
+    text-align: center;
+  }
+
+  .btn-saiba-mais {
+    width: 100%;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .card-item img {
+    height: 150px;
+  }
+
+  .card-item {
+    padding: 15px;
+  }
+
+  .cards {
+    padding: 30px 10px;
+  }
+
+  #header nav ul li a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #header nav ul li a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  #banner h1 {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  #solucoes {
+    padding: 20px 10px;
+  }
+
+  #solucoes p {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #solucoes .verMais,
+  .btn-saiba-mais {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #solucoes main {
+    flex-direction: column;
+  }
+
+  #solucoes main .imgVertical {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  #solucoes main ul li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .card-item img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .cards-list {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .cards {
+    padding: 30px 10px;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 200px) {
+  body {
+    overflow-x: hidden;
+    font-size: 12px;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  #header nav ul {
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+  }
+
+  #header nav ul li a {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  #banner h1 {
+    font-size: 0.9rem;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  #solucoes {
+    padding: 10px 5px;
+  }
+
+  #solucoes p {
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #solucoes .verMais,
+  .btn-saiba-mais {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+
+  #solucoes main {
+    flex-direction: column;
+  }
+
+  #solucoes main .imgVertical {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #solucoes main ul {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 0;
+    gap: 10px;
+  }
+
+  #solucoes main ul li {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .card-item img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .cards-list {
+    gap: 5px;
+    padding: 0 5px;
+  }
+
+  .cards {
+    padding: 10px 5px;
+  }
+
+  .whatsapp-float {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 5px 0;
+    gap: 4px;
+  }
 }

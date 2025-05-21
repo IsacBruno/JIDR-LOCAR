@@ -35,15 +35,17 @@
         <!-- Exibe a logomarca no topo do site -->
     
         <!-- Barra de navegação com links para diferentes seções da página -->
-        <nav>
-            <ul>
-                <li><a href="#Inicio">Início</a></li> <!-- Link para a página inicial -->
-                <li><a href="#solucoes">Soluções</a></li> <!-- Link para a seção de soluções -->
-                <li><a href="#Modelos">Modelos</a></li> <!-- Link para a seção sobre a empresa -->
-                <li><a href="#Empresa">Empresas</a></li> <!-- Link para a seção de marcas -->
-                <li><a href="index.php">Login</a></li> <!-- Link para a seção de contato -->
-            </ul>
-        </nav>
+        <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícone Hamburguer -->
+
+<nav id="nav-menu" class="nav-menu">
+    <ul>
+        <li><a href="#Inicio">Início</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#Modelos">Modelos</a></li>
+        <li><a href="#Empresa">Empresas</a></li>
+        <li><a href="index.php">Login</a></li>
+    </ul>
+</nav>
     </header>
     
     <!-- Seção de banner (destaque) com título -->
@@ -104,12 +106,14 @@
                     <li>
                         <div>
                             <div>
-                                <img src="">
+                                <img src="./img/localidade.jpg">
                             </div>
                         </div>
-                        <h5></h5>
-                        <p></p>
-                        <button class="btn-saiba-mais" data-link="contrato.html"></button>
+                        <h5>Localidade da Empresa</h5>
+                        <p>Proteção contínua com rastreamento 24 horas</p>
+                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                            </div>
+                        </div>
                     </li>
     
                     <li>
@@ -117,10 +121,12 @@
                             <div>
                                 <img src="./img/seguro.png">
                             </div>
-                        </div>
+                       </div>
                         <h5>Seguros</h5>
-                        <p>Proteja-se contra prejuízos envolvendo danos, o roubo e o furto do seu veiculo</p>
-                        <button class="btn-saiba-mais" data-link="contrato.html">Saiba Mais</button>
+                        <p>Proteja-se contra prejuízos envolvendo danos, o roubo e o furto do seu veículo.</p>
+                       <button onclick="window.open('https://jidrseguros.vercel.app/', '_blank')" class="btn-saiba-mais">Saiba Mais</button>
+
+
                     </li>
     
                 </ul>
