@@ -409,6 +409,7 @@ main {
   margin-bottom: 10px;
 }
 
+
 /* Responsivo para telas menores */
 @media (max-width: 1024px) {
   #solucoes main {
@@ -752,3 +753,9 @@ main {
     gap: 4px;
   }
 }
+
+a{
+  text-decoration: none;
+}
+
+ 
