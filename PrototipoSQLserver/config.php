@@ -9,11 +9,11 @@ $connectionOptions = array(
 
 $conexao = sqlsrv_connect($serverName, $connectionOptions);
 
-
+/*
 if ($conexao === false) {
     die(print_r(sqlsrv_errors(), true));
 } else {
     echo 'Parabéns! Conexão realizada com êxito!';
 }
-  
+*/  
 ?>

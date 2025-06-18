@@ -537,7 +537,7 @@ main {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 300px) {
   body {
     overflow-x: hidden;
   }
